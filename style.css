@@ -1,0 +1,33 @@
+/* Estilos para o agrupamento de campos do formulário */
+.form-field {
+    display: flex; /* Habilita layout flex */
+    flex-direction: column; /* Define o layout dos itens como coluna */
+    gap: 20px; /* Adiciona espaçamento entre os itens flex */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+/* Estilos para cada campo de input individual */
+.input-field {
+    display: flex; /* Habilita layout flex */
+    flex-direction: column; /* Define o layout dos itens como coluna */
+}
+
+/* Estilos para labels e parágrafos dentro de input-field */
+.input-field label,
+.input-field p {
+    margin-bottom: 5px; /* Adiciona margem inferior */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilos específicos para parágrafos dentro de input-field */
+.input-field p {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

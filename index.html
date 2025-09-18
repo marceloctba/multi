@@ -1,0 +1,64 @@
+<!--
+Criado por CENOP 1628 - Multi
+F6764855 - Marcelo F.
+F3774458 - Gilberto
+v. 2.0 16.06.2025
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Content/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div class="form-container">
+
+        <div class="form-content">
+            <h1>Gerador de Link de Avaliação</h1>
+
+            <form class="form-field">
+                <div class="input-field">
+                    <label for="protocolo">Informe o número do protocolo GSV:</label>
+                    <input type="text" id="protocolo" name="protocolo" maxlength="11" placeholder="000.000.000"
+                        oninput="mascaraProtocolo(this)">
+                </div>
+
+                <div class="input-field">
+                    <label for="prefixo">Informe o prefixo da proposta:</label>
+                    <input type="text" id="prefixo" name="prefixo" maxlength="4" placeholder="0000">
+                </div>
+
+                <div class="input-field">
+                    <label for="Resultado">
+                        <p class="destaques">Link para avaliação:</p>
+                    </label>
+                    <p><a id="avaliacaoLink" target="blank"></a></p>
+                </div>
+
+                <button type="button" class="submit-btn" onclick="buscarUOR()"><span
+                        class="material-symbols-outlined">content_copy</span>Gerar e Copiar</button>
+            </form>
+        </div>
+
+     <!-- Controle do menu, imagens e outros elementos -->
+
+        <div class="menu-toggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+    </div>
+    </div>
+    <img src="../Content/multi.webp" alt="Logo Multi" class="logomulti">
+    <script src="script.js"></script>
+    <script src="../Content/menu.js"></script>
+</body>
+
+</html>
